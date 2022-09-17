@@ -6,6 +6,72 @@
 }
 
 $theme-color: rgb(255, 64, 0);
+$width: 15px;
+$height: 15px;
+
+$bounce_height: 30px;
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #131313;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color: $theme-color;
+    display: inline-block;
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.bounceball {
+    position: relative;
+    display: inline-block;
+    height: 37px;
+    width: $width;
+
+    &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        top: 0;
+        width: $width;
+        height: $height;
+        border-radius: 50%;
+        background-color: $theme-color;
+        transform-origin: 50%;
+        animation: bounce 500ms alternate infinite ease;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: $bounce_height;
+        height: 5px;
+        border-radius: 60px 60px 20px 20px;
+        transform: scaleX(2);
+    }
+
+    35% {
+        height: $height;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
 
 .wrap {
     width: 100%;
@@ -137,7 +203,7 @@ $theme-color: rgb(255, 64, 0);
 
             .details__text {
                 color: #ffffff;
-                font-size: calc(12px + .3vw);
+                font-size: calc(14px + .3vw);
             }
 
             .details__btn {
@@ -271,16 +337,16 @@ $theme-color: rgb(255, 64, 0);
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-    
+
             .visual {
                 width: 100%;
-                
+
                 .visual__wrapper {
                     width: 100%;
                     padding-top: 0px;
                 }
             }
-    
+
             .details {
                 width: 100%;
                 margin: 0;
@@ -295,10 +361,10 @@ $theme-color: rgb(255, 64, 0);
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-    
+
             .visual {
                 width: 100%;
-                
+
                 .visual__wrapper {
                     flex-direction: row;
                     flex-wrap: wrap;
@@ -327,7 +393,7 @@ $theme-color: rgb(255, 64, 0);
                     }
                 }
             }
-    
+
             .details {
                 width: 100%;
                 margin: 0;
