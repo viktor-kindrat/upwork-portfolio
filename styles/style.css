@@ -46,6 +46,7 @@
   font-size: calc(15px + 0.3vw);
   font-weight: 400;
   margin: 25px 0 45px 0;
+  text-align: center;
 }
 .wrap .main .visual .visual__wrapper .visual__soc {
   width: 100%;
@@ -103,6 +104,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-left: 40px;
 }
 .wrap .main .details .headline {
   line-height: normal;
@@ -121,6 +123,21 @@
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 25px;
+}
+.wrap .main .details .details__detail {
+  margin-top: 15px;
+  display: block;
+}
+.wrap .main .details .details__skilsRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 25px 0;
+}
+.wrap .main .details .details__skilsRow .details__skill {
+  height: 75px;
+  width: 75px;
 }
 .wrap .headline {
   color: #ffffff;
@@ -203,6 +220,72 @@
 .wrap .toGithubBtn .toGithubBtn__img {
   height: 35px;
   width: 35px;
+}
+
+@media screen and (max-width: 783px) {
+  .wrap .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .wrap .main .visual {
+    width: 100%;
+  }
+  .wrap .main .visual .visual__wrapper {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .wrap .main .details {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 476px) {
+  .wrap .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .wrap .main .visual {
+    width: 100%;
+  }
+  .wrap .main .visual .visual__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .wrap .main .visual .visual__wrapper .visual__avatar {
+    height: 65px;
+    width: 65px;
+    border-width: 2px;
+  }
+  .wrap .main .visual .visual__wrapper .visual__text {
+    margin: 0;
+    margin-left: 15px;
+    font-size: calc(12px + 0.3vw);
+  }
+  .wrap .main .visual .visual__wrapper .visual__soc {
+    justify-content: flex-start;
+    margin-top: 15px;
+    gap: 15px;
+  }
+  .wrap .main .visual .visual__wrapper .visual__soc .visual__soc-item {
+    height: 30px;
+    width: 30px;
+  }
+  .wrap .main .details {
+    width: 100%;
+    margin: 0;
+  }
+  .wrap .main .details .details__skilsRow {
+    gap: 15px;
+  }
+  .wrap .main .details .details__skilsRow .details__skill {
+    height: 50px;
+    width: 50px;
+  }
+  .wrap .headline {
+    font-size: calc(25px + 0.3vw);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
