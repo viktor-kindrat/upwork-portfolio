@@ -22,7 +22,24 @@
   border-radius: 3px 0 3px 3px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   position: relative;
+  padding: 25px;
+  gap: 10px;
+}
+.wrap .swiper .swiper-slide .slider__button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: rgb(255, 64, 0);
+  text-decoration: none;
+  color: #ffffff;
+  font-size: calc(10px + 0.3vw);
+}
+.wrap .swiper .swiper-slide .slider__headline {
+  color: #ffffff;
+  font-size: calc(20px + 0.3vw);
+  text-transform: uppercase;
 }
 .wrap .swiper .swiper-slide .slidecorn {
   height: 50px;
@@ -43,8 +60,11 @@
 }
 .wrap .swiper .swiper-button-next,
 .wrap .swiper .swiper-button-prev {
-  right: 10px;
-  padding: 30px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.274);
+  right: 20px;
+  padding: 40px;
+  border-radius: 50%;
   color: rgb(255, 64, 0) !important;
   fill: rgb(255, 64, 0) !important;
   stroke: rgb(255, 64, 0) !important;
