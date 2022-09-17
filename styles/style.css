@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #131313;
+  font-family: "Montserrat", sans-serif;
+}
+.wrap .swiper {
+  width: 100%;
+  height: 300px;
+}
+.wrap .swiper .swiper-slide {
+  width: 200px;
+  background: gray;
+  border-radius: 3px 0 3px 3px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.wrap .swiper .swiper-slide .slidecorn {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #131313;
+  z-index: 200;
+  display: flex;
+}
+.wrap .swiper .swiper-slide .slidecorn .slidecorn__down {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 0 50px;
+  border-color: transparent transparent transparent rgb(255, 64, 0);
+}
+.wrap .swiper .swiper-button-next,
+.wrap .swiper .swiper-button-prev {
+  right: 10px;
+  padding: 30px;
+  color: rgb(255, 64, 0) !important;
+  fill: rgb(255, 64, 0) !important;
+  stroke: rgb(255, 64, 0) !important;
+}
+
+/*# sourceMappingURL=style.css.map */
