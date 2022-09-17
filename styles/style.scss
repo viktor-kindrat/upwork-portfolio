@@ -15,6 +15,111 @@ $theme-color: rgb(255, 64, 0);
     font-family: 'Montserrat', sans-serif;
     padding: 25px;
 
+    .main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+
+        .visual {
+            width: 30%;
+
+            .visual__wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .visual__avatar {
+                    height: 180px;
+                    width: 180px;
+                    border-radius: 50%;
+                    user-select: none;
+                    background:
+                        linear-gradient(transparent, transparent) padding-box,
+                        linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%) no-repeat center;
+                    background-size: 110% 110%;
+                    border: 4px solid transparent;
+                    object-fit: cover;
+                }
+
+                .visual__text {
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    font-size: calc(15px + .3vw);
+                    font-weight: 400;
+                    margin: 25px 0 45px 0;
+                }
+
+                .visual__soc {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 25px;
+
+                    .visual__soc-item {
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        border: 2px solid transparent;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        transition: margin 0.3s ease-in-out, box-shadow 0.3s ease-out;
+
+                        .visual__soc-icon {
+                            width: 50%;
+                            opacity: 0.5;
+                            transition: opacity 0.3s ease-out;
+                        }
+
+                        &:hover {
+                            margin-top: -3px;
+                            box-shadow: 0 0 10px #ffffff3b;
+
+                            .visual__soc-icon {
+                                opacity: 1;
+                            }
+                        }
+
+                        &_telegram {
+                            background:
+                                linear-gradient(#131313, #131313) padding-box,
+                                linear-gradient(52.96deg, #8134AF 50%, #CB218C 100%) no-repeat center;
+                            background-size: 120% 120%, 120% 120%;
+
+                            .visual__soc-icon {
+                                position: relative;
+                                top: 1px;
+                            }
+                        }
+
+                        &_instagram {
+                            background:
+                                linear-gradient(#131313, #131313) padding-box,
+                                linear-gradient(136.4deg, #F58529 0%, #FEDA77 2%, #DD2A7B 60%, #8134AF 75%, #515BD4 100%) no-repeat center;
+                            background-size: 120% 120%, 120% 120%;
+
+                        }
+
+                        &_linkedIn {
+                            background:
+                                linear-gradient(0deg, #141414, #141414) padding-box,
+                                linear-gradient(136.4deg, #B721FF 7.56%, #21D4FD 89.61%) no-repeat center;
+                            background-size: 120% 120%, 120% 120%;
+
+                            .visual__soc-icon {
+                                height: 45%;
+                                width: 45%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .headline {
         color: #ffffff;
         font-size: calc(45px + .3vw);
