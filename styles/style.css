@@ -11,11 +11,12 @@
   flex-direction: column;
   background: #131313;
   font-family: "Montserrat", sans-serif;
+  padding: 25px;
 }
 .wrap .headline {
   color: #ffffff;
   font-size: calc(45px + 0.3vw);
-  margin: 25px;
+  margin: 25px 0;
   text-transform: uppercase;
   font-weight: 900;
 }

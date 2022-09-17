@@ -13,11 +13,12 @@ $theme-color: rgb(255, 64, 0);
     flex-direction: column;
     background: #131313;
     font-family: 'Montserrat', sans-serif;
+    padding: 25px;
 
     .headline {
         color: #ffffff;
         font-size: calc(45px + .3vw);
-        margin: 25px;
+        margin: 25px 0;
         text-transform: uppercase;
         font-weight: 900;
     }
