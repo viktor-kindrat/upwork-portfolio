@@ -38,6 +38,8 @@ $theme-color: rgb(255, 64, 0);
             position: relative;
             padding: 25px;
             gap: 10px;
+            user-select: none;
+            background-position: center center;
 
             .slider__button {
                 padding: 10px 15px;
