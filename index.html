@@ -20,7 +20,7 @@
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- aos -->
@@ -33,12 +33,21 @@
         <div class="loader">
             <div class="loading">
                 <div class="bounceball"></div>
-                <div class="text">MAKEING THINGS</div>
+                <div class="text" data-languageElement="loader">MAKEING THINGS</div>
             </div>
         </div>
         <div class="main">
             <section class="visual">
                 <div class="visual__wrapper">
+                    <div class="visual__language-sector">
+                        <p class="visual__text visula__text_mini" data-languageElement="change-lang-h">Change language:
+                        </p>
+                        <div class="visual__languages">
+                            <button class="visual__lang" id="lang__en" data-languageElement="english">Eng</button>
+                            <button class="visual__lang" id="lang__ua" data-languageElement="ukrainian">Ua</button>
+                            <button class="visual__lang" id="lang__pol" data-languageElement="polish">Pol</button>
+                        </div>
+                    </div>
                     <img src="./images/me.webp" alt="victor kindrat photo" class="visual__avatar">
                     <h2 class="visual__text">Frontend developer</h2>
                     <div class="visual__soc">
@@ -49,20 +58,19 @@
                         </a>
                         <a href="https://www.linkedin.com/in/viktor-kindrat/" target="_blank"
                             class="visual__soc-item visual__soc-item_linkedIn">
-                            <img src="./images/linkedin.svg" width="50" height="50" alt="icon"
-                                class="visual__soc-icon">
+                            <img src="./images/linkedin.svg" width="50" height="50" alt="icon" class="visual__soc-icon">
                         </a>
                         <a href="https://victor_kindrat.t.me" target="_blank"
                             class="visual__soc-item visual__soc-item_telegram">
-                            <img src="./images/telegram.svg" width="50" height="50" alt="icon"
-                                class="visual__soc-icon">
+                            <img src="./images/telegram.svg" width="50" height="50" alt="icon" class="visual__soc-icon">
                         </a>
                     </div>
                 </div>
             </section>
             <section class="details">
-                <h2 class="headline">Hello 👋🏻 <br> I am <span class="detail__iam"></span></h2>
-                <p class="details__text">
+                <h2 class="headline" data-languageElement="hello">Hello 👋🏻 <br> I am <span class="detail__iam"></span>
+                </h2>
+                <p class="details__text" data-languageElement="description">
                     I am a web developer located in Ukraine 🇺🇦. I started my career in web
                     development by studying at the Creator IT Academy. I started my way in IT only in 2021, but I
                     already have a number of projects that are worth noting. These are both HTML / CSS-only web design
@@ -98,10 +106,11 @@
 
                     🧡 I will be grateful for any order!
                 </p>
-                <a href="#projects" class="details__btn">My last projects &dArr;</a>
+                <a href="#projects" class="details__btn" data-languageElement="last-projects-btn">My last projects
+                    &dArr;</a>
             </section>
         </div>
-        <h2 class="headline" data-aos="fade-right">Last rojects</h2>
+        <h2 class="headline" data-aos="fade-right" data-languageElement="last-projects">Last projects</h2>
         <div class="swiper" id="projects" data-aos="fade-right">
             <div class="swiper-wrapper" id="swiper-element">
                 <div class="swiper-slide"
@@ -112,7 +121,7 @@
                     <h2 class="slider__headline">
                         Puma landing
                     </h2>
-                    <a href="https://puma-landing.netlify.app/" target="_blank" class="slider__button">Open</a>
+                    <a href="https://puma-landing.netlify.app/" target="_blank" class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/pelio-dashboard.webp'); background-size: cover;">
@@ -122,7 +131,7 @@
                     <h2 class="slider__headline">
                         Pelio - finance dashboard
                     </h2>
-                    <a href="https://pelio-dashboard.netlify.app/" target="_blank" class="slider__button">Open</a>
+                    <a href="https://pelio-dashboard.netlify.app/" target="_blank" class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/MNTN-Landing.webp'); background-size: cover;">
@@ -133,7 +142,7 @@
                         MNTN landing
                     </h2>
                     <a href="https://victor-kindrat.github.io/MNTN-Landing/" target="_blank"
-                        class="slider__button">Open</a>
+                        class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/guess-the-number.webp'); background-size: cover;">
@@ -144,7 +153,7 @@
                         Guess the number game
                     </h2>
                     <a href="https://victor-kindrat.github.io/Guess-the-number-game/" target="_blank"
-                        class="slider__button">Open</a>
+                        class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/what-file-type-is-it.webp'); background-size: cover;">
@@ -155,7 +164,7 @@
                         What file type is it
                     </h2>
                     <a href="https://victor-kindrat.github.io/what-file-type-is-it/" target="_blank"
-                        class="slider__button">Open</a>
+                        class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/api-weather.webp'); background-size: cover;">
@@ -165,7 +174,7 @@
                     <h2 class="slider__headline">
                         API weather
                     </h2>
-                    <a href="https://vkindratapiweather.netlify.app/" target="_blank" class="slider__button">Open</a>
+                    <a href="https://vkindratapiweather.netlify.app/" target="_blank" class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/censor.webp'); background-size: cover;">
@@ -175,7 +184,7 @@
                     <h2 class="slider__headline">
                         Censor
                     </h2>
-                    <a href="https://victor-kindrat.github.io/Cenzor/" target="_blank" class="slider__button">Open</a>
+                    <a href="https://victor-kindrat.github.io/Cenzor/" target="_blank" class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/figmaland.webp'); background-size: cover;">
@@ -186,7 +195,7 @@
                         FigmaLand
                     </h2>
                     <a href="https://victor-kindrat.github.io/FigmaLand/" target="_blank"
-                        class="slider__button">Open</a>
+                        class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/travel-blog.webp'); background-size: cover;">
@@ -197,7 +206,7 @@
                         Travel blog
                     </h2>
                     <a href="https://victor-kindrat.github.io/travel-blog/" target="_blank"
-                        class="slider__button">Open</a>
+                        class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/yantarnefm.webp'); background-size: cover;">
@@ -207,7 +216,7 @@
                     <h2 class="slider__headline">
                         RadioQ page
                     </h2>
-                    <a href="https://yantarnefmvers.netlify.app/" target="_blank" class="slider__button">Open</a>
+                    <a href="https://yantarnefmvers.netlify.app/" target="_blank" class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
                 <div class="swiper-slide"
                     style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/physionic.webp'); background-size: cover;">
@@ -218,13 +227,13 @@
                         Physionic
                     </h2>
                     <a href="https://victor-kindrat.github.io/Physionic/" target="_blank"
-                        class="slider__button">Open</a>
+                        class="slider__button" data-languageElement="open-btn">Open</a>
                 </div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-        <a href="https://github.com/victor-kindrat" target="_blank" class="toGithubBtn"><img src="./images/github.svg"
+        <a href="https://github.com/victor-kindrat" target="_blank" class="toGithubBtn" data-languageElement="more"><img src="./images/github.svg"
                 alt="github href" class="toGithubBtn__img"> More projects on my github</a>
     </div>
     <script src="./js/swiper.js"></script>

@@ -1,6 +1,7 @@
 AOS.init();
-const options = {
-    strings: ['Victor Kindrat', 'web-developer'],
+let helloOptions = {
+    strings: document.location.hash.substring(1).length >=2 ? semanticCore.options[document.location.hash.substring(1)] : semanticCore.options['en'],
+    // strings: ['Кіндрат Віктор', 'веб-розробник'],
     typeSpeed: 50,
     loop: true,
     loopCount: Infinity,
@@ -10,5 +11,4 @@ const options = {
     backDelay: 5000,
     typeSpeed: 75
 };
-
-const typed = new Typed('.detail__iam', options);
+let typed = new Typed('.detail__iam', helloOptions);
