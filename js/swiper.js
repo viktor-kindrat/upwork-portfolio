@@ -15,6 +15,8 @@ let swiper = new Swiper('.swiper', {
 $(window).resize(function (e) {
   document.querySelector('#projects').innerHTML = originalSwipper;
   if (document.body.offsetWidth <= 800) {
+    $('.swiper-button-prev').css('display', 'none')
+    $('.swiper-button-next').css('display', 'none')
     swiper = new Swiper('.swiper', {
       direction: 'horizontal',
       loop: true,
@@ -27,6 +29,8 @@ $(window).resize(function (e) {
       spaceBetween: 15,
     });
   } else if (document.body.offsetWidth >= 800) {
+    $('.swiper-button-prev').css('display', 'block')
+    $('.swiper-button-next').css('display', 'block')
     swiper = new Swiper('.swiper', {
       direction: 'horizontal',
       loop: true,
