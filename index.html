@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor Kindrat</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- styles -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- swipper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -38,7 +41,7 @@
         <div class="main">
             <section class="visual">
                 <div class="visual__wrapper">
-                    <img src="./images/me.jpg" alt="victor kindrat photo" class="visual__avatar">
+                    <img src="./images/me.webp" alt="victor kindrat photo" class="visual__avatar">
                     <span class="visual__text">Frontend developer</span>
                     <div class="visual__soc">
                         <a href="https://www.instagram.com/victor_kindrat/" target="_blank"
@@ -99,9 +102,9 @@
         </div>
         <h2 class="headline" data-aos="fade-right">Last rojects</h2>
         <div class="swiper" id="projects" data-aos="fade-right">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" id="swiper-element">
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://files.fm/thumb_show.php?i=xevqs96xh'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/puma.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -111,7 +114,7 @@
                     <a href="https://puma-landing.netlify.app/" target="_blank" class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://fv9-5.failiem.lv/thumb_show.php?i=9kju3bgur&view'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/pelio-dashboard.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -121,7 +124,7 @@
                     <a href="https://pelio-dashboard.netlify.app/" target="_blank" class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://files.fm/thumb_show.php?i=hf2pwpzkw'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/MNTN-Landing.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -132,7 +135,7 @@
                         class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://files.fm/thumb_show.php?i=rbdbenq3j'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/guess-the-number.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -143,7 +146,7 @@
                         class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://files.fm/thumb_show.php?i=a4r89888x'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/what-file-type-is-it.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -154,7 +157,7 @@
                         class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://fv1-6.failiem.lv/thumb_show.php?i=ga7sjd33q&view'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/api-weather.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -164,7 +167,7 @@
                     <a href="https://vkindratapiweather.netlify.app/" target="_blank" class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://files.fm/thumb_show.php?i=h6bwd3w4g'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/censor.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -174,7 +177,7 @@
                     <a href="https://victor-kindrat.github.io/Cenzor/" target="_blank" class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://files.fm/thumb_show.php?i=a3pr82bjz'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/figmaland.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -185,7 +188,7 @@
                         class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://files.fm/thumb_show.php?i=dgem9w5jw'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/travel-blog.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -196,7 +199,7 @@
                         class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://files.fm/thumb_show.php?i=n3b3p33tv'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/yantarnefm.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -206,7 +209,7 @@
                     <a href="https://yantarnefmvers.netlify.app/" target="_blank" class="slider__button">Open</a>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('https://files.fm/thumb_show.php?i=svhhhk7p4'); background-size: cover;">
+                    style="background-image: linear-gradient(358.93deg, rgba(19, 19, 19, 0.75) 0.98%, rgba(0, 0, 0, 0) 63.53%), url('./images/projects/physionic.webp'); background-size: cover;">
                     <div class="slidecorn">
                         <div class="slidecorn__down"></div>
                     </div>
@@ -225,25 +228,7 @@
     </div>
     <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
-    <script>
-        document.body.onload = function () {
-            $('.loader').fadeOut(300)
-        }
-        AOS.init();
-        const options = {
-            strings: ['Victor Kindrat', 'web-developer'],
-            typeSpeed: 50,
-            loop: true,
-            loopCount: Infinity,
-            fadeOut: true,
-            fadeOutClass: 'typed-fade-out',
-            fadeOutDelay: 500,
-            backDelay: 5000,
-            typeSpeed: 75
-        };
-
-        const typed = new Typed('.detail__iam', options);
-    </script>
+    <script src="./js/init.js"></script>
 </body>
 
 </html>

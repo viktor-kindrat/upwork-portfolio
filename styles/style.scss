@@ -1,3 +1,9 @@
+$theme-color: rgb(255, 64, 0);
+$width: 15px;
+$height: 15px;
+
+$bounce_height: 30px;
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +11,22 @@
     scroll-behavior: smooth;
 }
 
-$theme-color: rgb(255, 64, 0);
-$width: 15px;
-$height: 15px;
+*::selection {
+    background: rgba(255, 64, 0, 0.5);
+}
 
-$bounce_height: 30px;
+img {
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $theme-color;
+    border-radius: 0;
+}
 
 .loader {
     height: 100vh;
@@ -23,6 +40,7 @@ $bounce_height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 .text {
