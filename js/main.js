@@ -1,5 +1,3 @@
-setTimeout(() => {
-    document.body.onload = function () {
-        $('.loader').fadeOut(300)
-    }
-}, 500);
+document.body.onload = function () {
+        $('.loader').fadeOut(400)
+}
