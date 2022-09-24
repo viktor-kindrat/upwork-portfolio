@@ -1,3 +1,3 @@
 document.body.onload = function () {
-        $('.loader').fadeOut(400)
+    $('.loader').fadeOut(400)
 }
