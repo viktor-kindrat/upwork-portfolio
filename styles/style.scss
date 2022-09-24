@@ -245,12 +245,12 @@ img {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                gap: 25px;
-                margin: 25px 0;
+                column-gap: 10px;
+                margin: 15px 0;
 
                 .details__skill {
-                    height: 75px;
-                    width: 75px;
+                    height: 65px;
+                    width: 65px;
                 }
             }
         }
