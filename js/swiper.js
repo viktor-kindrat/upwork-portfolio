@@ -12,7 +12,7 @@ let swiper = new Swiper('.swiper', {
   spaceBetween: 25,
 });
 
-$(window).resize(function (e) {
+function adapt() {
   document.querySelector('#projects').innerHTML = originalSwipper;
   if (document.body.offsetWidth <= 800) {
     $('.swiper-button-prev').css('display', 'none')
@@ -43,4 +43,10 @@ $(window).resize(function (e) {
       spaceBetween: 25,
     });
   }
+}
+
+adapt()
+
+$(window).resize(function (e) {
+  adapt()
 })

@@ -11,19 +11,19 @@ let semanticCore = {
         pol: 'Język:'
     },
     'english': {
-        en: 'en',
-        ua: 'англ',
-        pol: 'ang'
+        en: 'Eng',
+        ua: 'Англ',
+        pol: 'Ang'
     },
     'ukrainian': {
-        en: 'ua',
-        ua: 'укр',
-        pol: 'ukr'
+        en: 'Ua',
+        ua: 'Укр',
+        pol: 'Ukr'
     },
     'polish': {
-        en: 'pol',
-        ua: 'пол',
-        pol: 'pol'
+        en: 'Pol',
+        ua: 'Пол',
+        pol: 'Pol'
     },
     'description': {
         en: `
@@ -169,8 +169,14 @@ let semanticCore = {
     }
 }
 
-$('#lang__en, #lang__ua, #lang__pol').click(function(){
-    lang = $(this).attr('id').substring(6)
+let languageAttributes = {
+    en: 'english',
+    ua: 'ukrainian',
+    pol: 'polish'
+}
+
+$('#lang__en, #lang__ua, #lang__pol').click(function () {
+    lang = $(this).attr('id').substring(6);
     changeURL();
 })
 
@@ -181,9 +187,14 @@ function changeURL() {
 
 function changeLanguage() {
     let hash = (window.location.hash).substring(1);
+    if (hash) {
+        lang = hash;
+    }
     for (let key in semanticCore) {
         $(`*[data-languageElement="${key}"]`).html(semanticCore[key][hash])
     }
+    $('.visual__lang').attr('data-langBtnActive', 'disabled');
+    $(`button[data-languageElement="${languageAttributes[lang]}"]`).attr('data-langBtnActive', 'enabled');
 }
 changeLanguage()
 
