@@ -143,7 +143,7 @@ let semanticCore = {
         pol: 'Cześć👋🏻 <br> Jestem <span class="detail__iam"></span>'
     },
     'options': {
-        en: ['Victor Kindrat', 'web-developer'],
+        en: ['Viktor Kindrat', 'web-developer'],
         ua: ['Кіндрат Віктор', 'веб-розробник'],
         pol: ['Wiktor Kindrat', 'web-developer']
     },
@@ -165,7 +165,7 @@ let semanticCore = {
     'open-btn': {
         en: 'Open',
         ua: 'Відкрити',
-        pol: 'Otwórz'
+        pol: 'Przejdź'
     }
 }
 
